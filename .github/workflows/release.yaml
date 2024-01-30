@@ -192,7 +192,7 @@ jobs:
       - name: release/setup-files-for-github-release
         run: |
           mkdir -p ./ghr-dist
-          find ./build/{macos-release,win-release,linux} -type f -exec cp --backup=numbered -t ./ghr-dist {} +
+          find ./build/{win-release} -type f -exec cp --backup=numbered -t ./ghr-dist {} +
       - name: release/publish-release
         env:
           GITHUB_TOKEN: ${{ secrets.MATTERMOST_BUILD_GH_TOKEN }}

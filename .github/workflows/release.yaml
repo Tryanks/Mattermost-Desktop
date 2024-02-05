@@ -179,7 +179,7 @@ jobs:
               access_key: ${{ secrets.MM_DESKTOP_RELEASE_AWS_ACCESS_KEY_ID }}
               secret_key: ${{ secrets.MM_DESKTOP_RELEASE_AWS_SECRET_ACCESS_KEY }}
               bucket: mmrealease
-              source_dir: ./build
+              source: ./build
               target: '/build'
               recursive: true
 

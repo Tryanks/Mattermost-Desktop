@@ -174,9 +174,9 @@ jobs:
           with:
               aws_key_id: ${{ secrets.MM_DESKTOP_RELEASE_AWS_ACCESS_KEY_ID }}
               aws_secret_access_key: ${{ secrets.MM_DESKTOP_RELEASE_AWS_SECRET_ACCESS_KEY }}
-              aws_bucket: mmrelease
+              aws_bucket: mmrealease
               source_dir: ./build
-              endpoint: https://minio.eimsound.com
+              endpoint: minio.eimsound.com
 
       #      - name: release/setup-aws-credentials
 #        uses: aws-actions/configure-aws-credentials@67fbcbb121271f7775d2e7715933280b06314838 # v1.7.0
